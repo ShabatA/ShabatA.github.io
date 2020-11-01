@@ -3,6 +3,7 @@ published: true
 title: DUT Team Wins Hackathon at GOVTECH 2017
 ---
 
-## A New Post
+![]({{site.baseurl}}/https://www.dut.ac.za/wp-content/uploads/2017/11/pic-story1.jpg)
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+[govtech](https://www.dut.ac.za/dut-it-team-wins-hackathon-at-govtech-2017/ "DUT Team Wins Hackathon at GOVTECH 2017")
+
