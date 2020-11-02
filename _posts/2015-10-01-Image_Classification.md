@@ -3,7 +3,4 @@ published: true
 title: An Introduction to Image Classification
 ---
 tttttt
-
-<iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=s041lMgOlgs&feature=youtu.be&ab_channel=NextDayVideo">
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s041lMgOlgs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
