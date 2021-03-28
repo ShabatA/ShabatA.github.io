@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 title: An Introduction to Image Classification
 ---
 <p align="center">
