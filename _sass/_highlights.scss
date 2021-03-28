@@ -1,3 +1,4 @@
+.highlight, code { direction: ltr; }
 
 .highlight {
   background-color: #efefef;
@@ -11,7 +12,16 @@
 }
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-family: $monospace-font-family;
+  font-weight: 400;
+  font-size: 13px;
+  unicode-bidi: embed;
+
+  &.highlighter-rouge {
+    // specific to inline
+    color: $red;
+    padding: 0 2px;
+  }
 }
 
 .highlight .c { color: #586E75 } /* Comment */
