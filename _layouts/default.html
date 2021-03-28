@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_ad_client}}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{site.google_ad_client}}');
+    </script>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
-
+    
+    {% if site.google_ad_client %}
+      {% include google_adsense.html %}
+    {% endif %} 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png">
 
+    <script src="{{ '/javascripts/fontfaceobserver.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/javascripts/blog.js' | prepend: site.baseurl }}"></script>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Created with Arabic Jekyll - http://github.com/a3ammar/arabic-jekyll -->
   </head>
 
-  <body>
+  <body lang="ar">
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
+          {% if site.avatar %}
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          {% endif %}
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -29,15 +44,46 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/">المقالات</a>
+            <a href="{{ site.baseurl }}/other">محتوى آخر</a>
+            <a href="{{ site.baseurl }}/about">من أنا</a>
           </nav>
         </header>
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
+    <div id="main" role="main" class="container {% if page.class %}{{ page.class }}{% endif %}">
+
+    <div class="entry">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- HorizontalAds -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8513572715092457"
+     data-ad-slot="6489142684"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
       {{ content }}
+
+<div class="entry">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- HorizontalAds -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8513572715092457"
+     data-ad-slot="6489142684"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
     </div>
 
     <div class="wrapper-footer">
