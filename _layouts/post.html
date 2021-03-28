@@ -3,15 +3,16 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <h1>{{page.icon}}{{ page.title }}</h1>
 
   <div class="entry">
     {{ content }}
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    كُتب في  {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  {% include disqus.html %}
+  {% comment %} {% include disqus.html %} {% endcomment %}
+  {% comment %} {% include comments.html %} {% endcomment %}
 </article>
